@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap");
+
+@import "../vendor/bootstrap-5.2.0/scss/functions";
+
+//any default variables override here
+$primary: hsl(212, 45%, 89%);
+$secondary: hsl(0, 0%, 100%);
+$dark-blue: hsl(218, 69%, 6%);
+$accent: hsl(220, 15%, 55%);
+
+$body-bg: $primary;
+$font-family-sans-serif: "Outfit", sans-serif;
+$small-font-size: 12.5px;
+$font-weight-bolder: 700;
+
+@import "../vendor/bootstrap-5.2.0/scss/variables";
+
+//any default maps override here
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark-blue": $dark-blue,
+  "accent": $accent,
+);
+
+@import "../vendor/bootstrap-5.2.0/scss/mixins";
+@import "../vendor/bootstrap-5.2.0/scss/maps";
+@import "../vendor/bootstrap-5.2.0/scss/utilities";
+@import "../vendor/bootstrap-5.2.0/scss/type";
+@import "../vendor/bootstrap-5.2.0/scss/root";
+@import "../vendor/bootstrap-5.2.0/scss/reboot";
+
+//what you need partials
+@import "../vendor/bootstrap-5.2.0/scss/images";
+@import "../vendor/bootstrap-5.2.0/scss/containers";
+@import "../vendor/bootstrap-5.2.0/scss/grid";
+@import "../vendor/bootstrap-5.2.0/scss/card";
+
+// Helpers
+@import "../vendor/bootstrap-5.2.0/scss/helpers";
+
+// Utilities
+@import "../vendor/bootstrap-5.2.0/scss/utilities/api";
+// scss-docs-end import-stack
+
+.pointer {
+  cursor: pointer;
+}
+
+.w-sm {
+  width: 260px;
+}
+
+.p-semi {
+  padding: 0.79rem;
+}
+
+.fs-semi {
+  font-size: 1.09rem;
+}
